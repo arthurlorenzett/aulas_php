@@ -1,3 +1,5 @@
+name: aulas_php
+
 services:
   web:
     build: .
