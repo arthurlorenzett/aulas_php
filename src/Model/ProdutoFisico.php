@@ -1,9 +1,11 @@
 <?php
+
 namespace App\Model;
+
 
 class ProdutoFisico extends Produto {
     public function __construct(
-        ?int $id,
+        ?int $id, 
         string $nome, 
         float $preco,
         int $estoque,
@@ -13,7 +15,7 @@ class ProdutoFisico extends Produto {
     }
 
     public function frete(int $qtd = 1):float {
-        return $this->pesoKg * 5 * $qtd;
+        return $this->pesoKg * 5 * qtd;
     }
 
     public function getPesoKg(): float{

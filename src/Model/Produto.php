@@ -3,9 +3,11 @@
 namespace App\Model;
 
 abstract class Produto {
+  protected ?string $imagem = null;   // nome do arquivo em uploads/
+
   public function __construct(
-    protected ?int $id,
-    protected string $nome,
+    protected ?int $id, 
+    protected string $nome, 
     protected float $preco,
     protected int $estoque
     ) {}
@@ -17,5 +19,11 @@ abstract class Produto {
   public function getNome(): string { return $this->nome; }
   public function getPreco(): float { return $this->preco; }
   public function getEstoque(): int { return $this->estoque; }
+  public function getImagem(): ?string { return $this->imagem; }
+  public function setImagem(?string $imagem): void { $this->imagem = $imagem; }
 
 }
+
+
+
+

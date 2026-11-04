@@ -21,3 +21,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   Estoque <input name="estoque" type="number" required>
   <button>Salvar</button>
 </form>
+
+

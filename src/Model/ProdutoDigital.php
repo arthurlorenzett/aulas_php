@@ -3,7 +3,7 @@ namespace App\Model;
 
 class ProdutoDigital extends Produto {
     public function __construct(
-        ?int $id,
+        ?int $id, 
         string $nome, 
         float $preco,
         int $estoque,
